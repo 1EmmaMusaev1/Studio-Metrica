@@ -1,0 +1,111 @@
+.section-contacts{
+    padding: 150px 0;
+}
+
+.title{
+    margin-top: 150px;
+    
+}
+
+.link{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.number{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #121212;
+}
+.number:hover{
+    opacity: 50%;
+}
+
+.mail{
+    width: 50%;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #121212;
+}
+.mail:hover{
+    opacity: 50%;
+
+}
+.number::before , 
+.mail::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 21px;
+    background-size: cover;
+}
+
+.number::before{
+    background-image: url('resources/images/phone.png')
+}
+.mail::before{
+    background-image: url('resources/images/mail.png')
+}
+
+
+@media (max-width: 1199px) {
+    .section-contacts {
+            padding: 120px 0;
+        }
+        .link{
+            margin-top: 30px;
+        }
+        .number {
+            font-size: 45px;
+        
+        }
+    
+        .mail {
+            font-size: 45px;
+            margin: auto;
+        }
+        .number:before,
+        .mail:before {
+        margin-bottom: 26px;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .section-contacts{
+        padding: 60px 0;
+    }
+    .link{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        
+    }
+
+    .number{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .mail {
+        margin: -1px;
+        font-size: 35px;
+        line-height: 45px;
+        }
+
+
+}
